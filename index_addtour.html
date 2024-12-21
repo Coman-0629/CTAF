@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Information Form</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles_addtour.css">
+</head>
+<body background="images/chessboard1.jpg">
+    <!-- Back button -->
+    <button class="back-button" onclick="goBack()">Go Back</button>
+
+    <h1>Tournament Information</h1>
+    <p>Fill out the form below:</p>
+    <!-- Form contents here -->
+    
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <!-- Form fields here (name, date, CSV, etc.) -->
+    </form>
+
+    <script>
+        // JavaScript function to go back to the homepage
+        function goBack() {
+            window.location.href = 'index_home.html';  // Navigate to the homepage
+        }
+    </script>
+
+    <div class="container" >
+    <div class=".page-div">
+        <h1>Tournament Information Form</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <!-- All form elements are within a single div below -->
+            <div>
+                <!-- Name Input -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Date Input -->
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <!-- CSV Input -->
+                <div class="form-group">
+                    <label for="csv">CSV File</label>
+                    <input type="file" id="csv" name="csv" accept=".csv" required>
+                </div>
+
+                <!-- PGN Total Input -->
+                <div class="form-group">
+                    <label for="pgn_total">PGN Total</label>
+                    <input type="file" id="pgn_total" name="pgn_total" accept=".txt" required>
+                </div>
+
+                <!-- PGN Iconic Game Input -->
+                <div class="form-group">
+                    <label for="pgn_iconic">PGN of Iconic Game</label>
+                    <input type="file" id="pgn_iconic" name="pgn_iconic" accept=".txt" required>
+                </div>
+
+                <!-- Winner Input -->
+                <div class="form-group">
+                    <label for="winner">Winner</label>
+                    <input type="text" id="winner" name="winner" required>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+
+</body>
+</html>
